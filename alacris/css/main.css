@@ -471,10 +471,10 @@ textarea {
   max-height: 56vw;
   height: auto;
   padding-bottom: 210px;
-   background-image: url(../img/optimized/bg/hero-bg.png)
+  background-image: url(../img/optimized/bg/hero-bg.png)
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
+@media (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) {
   .hero {
   background-image: url(../img/bg/hero-bg.png)

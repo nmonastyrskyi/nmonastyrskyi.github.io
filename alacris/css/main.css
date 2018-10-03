@@ -1168,16 +1168,14 @@ textarea {
   justify-content: space-between;
 }
 
-.popup-socials__item {
-  margin-left: -9px;
-  margin-right: -9px;
-}
 
 .popup__socials {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
+    margin-left: -9px;
+    margin-right: -9px;
 }
 
 .popup__shadow {
@@ -1785,6 +1783,7 @@ textarea {
   .advisor__image {
     height: 150px;
     width: 115px;
+    flex-shrink: 0;
     margin-top: 19.95px;
     border-radius: 8px
   }

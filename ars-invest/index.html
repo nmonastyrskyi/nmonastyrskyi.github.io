@@ -14,7 +14,7 @@
 
     <!-- Template Basic Images Start -->
     <meta property="og:image" content="path/to/image.jpg" />
-    <link rel="icon" href="img/favicon/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -55,13 +55,6 @@
           <li class="mmenu__item">
             <a href="#contacts" class="mmenu-item__link reset-a">Контакты</a>
           </li>
-          <li class="mmenu__item_lang">
-            <span data-lang="ru" class="mmenu__item_lang-span">RU</span>/<span
-              class="mmenu__item_lang-span"
-              data-lang="en"
-              >ENG</span
-            >
-          </li>
         </ul>
       </nav>
     </div>
@@ -83,13 +76,6 @@
             <li class="nav__item">
               <a href="#contacts" class="nav-item__link reset-a">Контакты</a>
             </li>
-            <li class="nav__item_lang">
-              <span data-lang="ru" class="nav__item_lang-span">RU</span>/<span
-                class="nav__item_lang-span"
-                data-lang="en"
-                >ENG</span
-              >
-            </li>
           </ul>
           <div class="header__burger burger ">
             <div class="burger__inner"></div>
@@ -106,10 +92,6 @@
               alt="ARS Invest"
               class="logo hero__logo"
             />
-            <div class="slider-counter">
-              <p class="slider-counter__current">O1</p>
-              <p class="slider-counter__total">O4</p>
-            </div>
           </div>
         </div>
         <div class="hero-mask__line"></div>
@@ -527,13 +509,25 @@
             <form class="contacts__form with-gutter">
               <div class="contacts-form__flex">
                 <input
+                  type="hidden"
+                  name="project_name"
+                  value="ARS INVEST website"
+                />
+                <input
+                  type="hidden"
+                  name="admin_email"
+                  value="info@arsinvest.co"
+                />
+                <input
                   placeholder="Имя"
                   type="text"
+                  name="name"
                   required
                   class="contacts-form__control contacts-form__input"
                 />
                 <input
                   placeholder="Телефон"
+                  name="phone"
                   type="tel"
                   pattern="[0-9+]+"
                   title="Допустимо использовать + и цифры"
@@ -541,9 +535,17 @@
                   class="contacts-form__control contacts-form__input"
                 />
               </div>
+              <input
+                placeholder="E-mail"
+                type="email"
+                name="email"
+                required
+                class="contacts-form__control contacts-form__input_fullwidth"
+              />
               <textarea
                 placeholder="Введите ваше сообщение"
                 class="contacts-form__control contacts-form__textarea"
+                name="message"
                 required
               ></textarea>
               <button type="submit" class="btn contacts-form__btn">
@@ -569,14 +571,14 @@
                 <div class="marker"></div>
                 <div class="text">
                   <p class="marker__city">Алматы</p>
-                  <p class="marker__company">ООО «АРС Инвест»</p>
+                  <p class="marker__company">ОО «АРС Инвест Азия»</p>
                 </div>
               </div>
               <div class="marker-container marker_hongkong">
                 <div class="marker"></div>
                 <div class="text">
-                  <p class="marker__city">Гонгконг</p>
-                  <p class="marker__company">ООО «АРС Инвест»</p>
+                  <p class="marker__city">Hong Kong</p>
+                  <p class="marker__company">LLC “ARS Trading”</p>
                 </div>
               </div>
             </div>
